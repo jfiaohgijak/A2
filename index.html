@@ -21,13 +21,57 @@
       img{
         margin: 50px 50px 20px 20px
       }
+      .dropbtn{
+        background: DarkGreen;
+        color: #ABB2B9;
+        padding: 20px;
+        font-size: 16px;
+        border: none;
+        margin: 20px;
+      }
+      .dropdown{
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-content{
+        display:none;
+        position: absolute;
+        background-color: DarkOliveGreen;
+        box-shadow:
+      }
+      .dropdown-content a {
+        color: #1C2833;
+        padding:15px, 20px;
+        display: block;
+        font-family: 'Dosis', sans-serif;
+        text-decoration: none;
+      }
+      .dropdown-content a:hover {background-color:DarkSeaGreen}
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
     </style>
   </head>
   <body>
-    <h1>Group Website</h1>
-    <a href="https://0kOllie.github.io/"> Oliver's Website </a>
-    <a href="https://Mrottura23.github.io/"> Matthew's Website </a>
-    <a href="https://s3949120.github.io/"> Andy's Website </a>
-    <a href="https://Tommy-ngo2811.github.io/"> Tommy's Website </a>
-    <a href="https://jfiaohgijak.github.io/"> Claire's Website </a>
+    <nav role="navigation">
+      <div class="dropdown">
+        <button class="dropbtn">About Us</button>
+        <div class="dropdown-content">
+          <a href="index.html">Team 19</a>
+          <a href="https://0kOllie.github.io/"> Oliver </a>
+          <a href="https://Mrottura23.github.io/"> Matthew </a>
+          <a href="https://s3949120.github.io/"> Andy </a>
+          <a href="https://Tommy-ngo2811.github.io/"> Tommy </a>
+          <a href="https://jfiaohgijak.github.io/"> Claire </a>
+        </div>
+        <button class="dropbtn">IT Technologies</button>
+        <div class="dropdown-content">
+          <a href="cybersecurity.html">Cybersecurity</a>
+          <a href="machine.html">Machine Learning</a>
+          <a href="machine.html">Robots</a>
+          <a href="machine.html">Autonomous Vehicles</a>
+        </div>
+      </div>
+    </nav>
+    <h1>Team 19</h1>
   </body>
