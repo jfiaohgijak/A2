@@ -1,86 +1,146 @@
-<html lang="en" dir="ltr">
-  <head link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <meta charset="uft-8">
-    <title>Assignment 2 </title>
-    <style media="screen">
-      body{
-        margin: 50px;
-        background-color: #1C2833;
-        text-align:center;
-        font-family: 'Dosis', sans-serif;
-        color: #ABB2B9;
-      }
-      a{
-        font-size: 25px;
-        margin-left: 25px;
-        margin-right: 25px;
-        color: #ABB2B9;
-      }
-      img{
-        margin: 50px 50px 20px 20px
-      }
-      button{
-        background: DarkGreen;
-        color: #ABB2B9;
-        padding: 20px;
-        font-size: 16px;
-        border: none;
-        margin: 20px;
-      }
-      .dropbtn{
-        background: DarkGreen;
-        color: #ABB2B9;
-        padding: 20px;
-        font-size: 16px;
-        border: none;
-        margin: 20px;
-      }
-      .dropdown{
-        position: relative;
-        display: inline-block;
-      }
-      .dropdown-content{
-        display:none;
-        position: absolute;
-        background-color: DarkOliveGreen;
-        box-shadow:
-      }
-      .dropdown-content a {
-        color: #1C2833;
-        padding:15px, 20px;
-        display: block;
-        font-family: 'Dosis', sans-serif;
-        text-decoration: none;
-      }
-      .dropdown-content a:hover {background-color:DarkSeaGreen}
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-    </style>
-  </head>
-  <body>
-    <nav role="navigation">
-      <div class="dropdown">
-        <button class="dropbtn">About Us</button>
-        <div class="dropdown-content">
-          <a href="index.html">Team 19</a>
-          <a href="https://0kOllie.github.io/"> Oliver </a>
-          <a href="https://Mrottura23.github.io/"> Matthew </a>
-          <a href="https://s3949120.github.io/"> Andy </a>
-          <a href="https://Tommy-ngo2811.github.io/"> Tommy </a>
-          <a href="https://jfiaohgijak.github.io/"> Claire </a>
-        </div>
-        <button class="dropbtn">IT Technologies</button>
-        <div class="dropdown-content">
-          <a href="cybersecurity.html">Cybersecurity</a>
-          <a href="machine.html">Machine Learning</a>
-          <a href="machine.html">Robots</a>
-          <a href="machine.html">Autonomous Vehicles</a>
-        </div>
-        <button onclick="document.location"="work.html">IT Work</button>
-      </div>
-    </nav>
-    <h1>Team 19</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Team 19<br>Travel Guides</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Project Idea</a>
+    <a href="industry.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Industry Data</a>
+    <a href="jobs.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Ideal Jobs</a>
+    <a href="machine.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Machine Learning</a>
+    <a href="cybersecurity.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Cybersecurity</a>
+    <a href="robots.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Robots</a>
+    <a href="vehicles.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Autonomous Vehicles</a>
+    <a href="work.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">IT Work</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>The Travel Guides</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Overview -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Project Idea</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Overview</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>
+    </p>
+  </div>
+
+
+
+  <!-- Motivation -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Motivation</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+
+
+  <!-- Description -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Description</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+
+
+  <!-- Tools & Technology -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Tools & Technology</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+
+
+  <!-- Skills Required -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Skills Required</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+
+
+  <!-- Outcome  -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Outcome</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
